@@ -26,6 +26,11 @@ public class InvoiceGenerator {
         return totalFare;
     }
 
+    /**
+     * calculateFareMultipleRides method calculate totalFare and Minimum Fare of Different Rides.
+     * @param rides array taking Multiple Rides.
+     * @return  totalFare and Minimum Fare of Multiple Rides.
+     */
     public double calculateFareMultipleRides(Ride[] rides) {
         double totalFare = 0;
         for (Ride ride:rides){
