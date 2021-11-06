@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cabinvoicegenerator.CabInvoiceGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-06T03:30:23" hostname="DESKTOP-U9VT6NQ" time="0.181">
+<testsuite name="cabinvoicegenerator.CabInvoiceGeneratorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-11-06T19:35:45" hostname="DESKTOP-U9VT6NQ" time="0.1">
   <properties/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.181"/>
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.068"/>
+  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.009"/>
+  <testcase name="givenUserId_ShouldReturnInvoiceSummary()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.006"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
