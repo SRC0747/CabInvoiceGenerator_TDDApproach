@@ -67,4 +67,15 @@ class CabInvoiceGeneratorTest {
         double fare = invoiceService.calculateFareForPremium(distance, time);
         Assertions.assertEquals(40, fare, 0.0);
     }
+
+    @Test
+    public void givenMultipleRide_ShouldReturnPremiumTotalFare() {
+        InvoiceService invoiceService = new InvoiceService();
+        Ride[] rides = {new Ride(2.0, 5, InvoiceService.RideMode.PREMIUM),
+                new Ride(0.1, 1,InvoiceService.RideMode.PREMIUM),
+        };
+        InvoiceSummary summary = invoiceService.calculateFareForNormal(rides);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 50);
+        Assertions.assertEquals(expectedInvoiceSummary, summary);
+    }
 }
