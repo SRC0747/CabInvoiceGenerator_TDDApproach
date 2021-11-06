@@ -11,9 +11,11 @@ package cabinvoicegenerator;
 public class Ride {
     public final double distance;
     public final int time;
+    public InvoiceService.RideMode rideMode;
 
-    public Ride(double distance, int time) {
+    public Ride(double distance, int time, InvoiceService.RideMode rideMode) {
         this.distance = distance;
         this.time = time;
+        this.rideMode = rideMode;
     }
 }

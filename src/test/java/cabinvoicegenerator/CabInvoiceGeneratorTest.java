@@ -36,8 +36,8 @@ class CabInvoiceGeneratorTest {
     @Test
     public void givenMultipleRides_ShouldReturnTotalFare() {
         //InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
-        Ride[] rides = { new Ride(2.0, 5),
-                new Ride(0.1, 1),
+        Ride[] rides = { new Ride(2.0, 5, InvoiceService.RideMode.NORMAL),
+                new Ride(0.1, 1, InvoiceService.RideMode.NORMAL),
                 //new Ride(0.2,2),
         };
         InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
@@ -50,9 +50,9 @@ class CabInvoiceGeneratorTest {
         //InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         String[] userId = {"user1", "user2", "user3"};
         Ride[][] rides ={
-                {new Ride(5.0, 12), new Ride(2.5, 6)},
-                {new Ride(3.0, 5), new Ride(0.01, 1)},
-                {new Ride(10.0, 15), new Ride(2, 30)} };
+                {new Ride(5.0, 12, InvoiceService.RideMode.NORMAL), new Ride(2.5, 6, InvoiceService.RideMode.NORMAL)},
+                {new Ride(3.0, 5, InvoiceService.RideMode.NORMAL), new Ride(0.01, 1, InvoiceService.RideMode.NORMAL)},
+                {new Ride(10.0, 15, InvoiceService.RideMode.NORMAL), new Ride(2, 30, InvoiceService.RideMode.NORMAL)} };
         invoiceGenerator.addRideToRepositoy(userId, rides);
         InvoiceSummary summery = invoiceGenerator.invoiceForUser(userId[2]);
         InvoiceSummary expectedInvoiceSummery = new InvoiceSummary(rides[2].length, 165.0);

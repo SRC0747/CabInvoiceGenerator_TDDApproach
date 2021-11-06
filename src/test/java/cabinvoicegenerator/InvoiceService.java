@@ -21,5 +21,14 @@ public class InvoiceService {
         double totalFare = (distance * MINIMUM_COST_PER_KM_PREMIUM) + (time * COST_PER_TIME_PREMIUM);
         return Math.max(totalFare, MINIMUM_FARE_PREMIUM);
     }
-
+    public InvoiceSummary calculateFareForNormal(Ride[] rides) {
+        double totalFare = 0.0;
+        for (Ride ride : rides) {
+            if (ride.rideMode.equals(RideMode.NORMAL))
+                totalFare += this.calculateFareForNormal(ride.distance, ride.time);
+            else
+                totalFare += this.calculateFareForPremium(ride.distance, ride.time);
+        }
+        return new InvoiceSummary(rides.length, totalFare);
+    }
 }
