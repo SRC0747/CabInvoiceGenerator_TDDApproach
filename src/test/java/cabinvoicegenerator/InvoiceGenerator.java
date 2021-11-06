@@ -46,6 +46,12 @@ public class InvoiceGenerator {
         return new InvoiceSummary(rides.length, totalFare);
     }
 
+    /**
+     * addRideToRepository is used to add the rides corresponding to userId
+     * @param userId
+     * @param rides
+     * @throws InvoiceGeneratorException
+     */
     public void addRideToRepositoy(String[] userId, Ride[][] rides) throws InvoiceGeneratorException {
         for (int i = 0; i < userId.length; i++)
         {
@@ -53,6 +59,11 @@ public class InvoiceGenerator {
         }
     }
 
+    /**
+     * invoiceForUser is used to calculate fare based on userId and
+     * @param userId
+     * @return invoiceSummary details of the user
+     */
     public InvoiceSummary invoiceForUser(String userId) {
         return calculateFare(rideRepository.getRidesForUser(userId));
     }
