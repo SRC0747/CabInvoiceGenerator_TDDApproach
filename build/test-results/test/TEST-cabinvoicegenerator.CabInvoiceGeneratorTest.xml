@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cabinvoicegenerator.CabInvoiceGeneratorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-11-06T21:54:54" hostname="DESKTOP-U9VT6NQ" time="0.142">
+<testsuite name="cabinvoicegenerator.CabInvoiceGeneratorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-11-06T22:17:04" hostname="DESKTOP-U9VT6NQ" time="0.112">
   <properties/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.071"/>
-  <testcase name="givenMultipleRide_ShouldReturnPremiumTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.014"/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.005"/>
-  <testcase name="givenUserIdAndRides_ShouldReturnBothInvoiceSummary()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.005"/>
-  <testcase name="givenDistanceAndTime_shouldReturnPremiumTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.005"/>
-  <testcase name="givenUserId_ShouldReturnInvoiceSummary()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.003"/>
-  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.009"/>
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.055"/>
+  <testcase name="givenMultipleRide_ShouldReturnPremiumTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.009"/>
+  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.003"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnBothInvoiceSummary()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.004"/>
+  <testcase name="givenDistanceAndTime_shouldReturnPremiumTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.003"/>
+  <testcase name="givenUserId_ShouldReturnInvoiceSummary()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.004"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare()" classname="cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

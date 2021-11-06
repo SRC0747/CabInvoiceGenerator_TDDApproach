@@ -74,7 +74,7 @@ class CabInvoiceGeneratorTest {
         Ride[] rides = {new Ride(2.0, 5, InvoiceService.RideMode.PREMIUM),
                 new Ride(0.1, 1,InvoiceService.RideMode.PREMIUM),
         };
-        InvoiceSummary summary = invoiceService.calculateFareForNormal(rides);
+        InvoiceSummary summary = invoiceService.calculateFareForNormalPremium(rides);
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 50);
         Assertions.assertEquals(expectedInvoiceSummary, summary);
     }
