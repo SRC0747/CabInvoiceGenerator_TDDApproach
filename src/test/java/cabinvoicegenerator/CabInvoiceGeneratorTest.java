@@ -58,4 +58,13 @@ class CabInvoiceGeneratorTest {
         InvoiceSummary expectedInvoiceSummery = new InvoiceSummary(rides[2].length, 165.0);
         Assertions.assertEquals(expectedInvoiceSummery, summery);
     }
+
+    @Test
+    public void givenDistanceAndTime_shouldReturnPremiumTotalFare() {
+        InvoiceService invoiceService = new InvoiceService();
+        double distance = 2.0;
+        int time = 5;
+        double fare = invoiceService.calculateFareForPremium(distance, time);
+        Assertions.assertEquals(40, fare, 0.0);
+    }
 }
