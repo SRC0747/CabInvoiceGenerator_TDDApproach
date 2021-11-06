@@ -78,4 +78,18 @@ class CabInvoiceGeneratorTest {
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 50);
         Assertions.assertEquals(expectedInvoiceSummary, summary);
     }
+
+    @Test
+    public void givenUserIdAndRides_ShouldReturnBothInvoiceSummary() throws InvoiceGeneratorException {
+        InvoiceService invoiceService = new InvoiceService();
+        String[] userId = {"user1", "user2", "user3"};
+        Ride[][] rides ={
+                {new Ride(5.0, 12, InvoiceService.RideMode.NORMAL), new Ride(2.5, 6, InvoiceService.RideMode.PREMIUM)},
+                {new Ride(3.0, 5, InvoiceService.RideMode.PREMIUM), new Ride(0.01, 1, InvoiceService.RideMode.NORMAL)},
+                {new Ride(10.0, 15, InvoiceService.RideMode.NORMAL), new Ride(2, 30, InvoiceService.RideMode.PREMIUM)} };
+        invoiceService.addRides(userId, rides);
+        InvoiceSummary summary = invoiceService.getInvoiceSummary(userId);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 111.5);
+        Assertions.assertEquals(expectedInvoiceSummary, summary);
+    }
 }
