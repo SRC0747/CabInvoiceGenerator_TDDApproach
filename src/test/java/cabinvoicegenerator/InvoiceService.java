@@ -31,4 +31,13 @@ public class InvoiceService {
         }
         return new InvoiceSummary(rides.length, totalFare);
     }
+    public void addRides(String[] userId, Ride[][] rides) throws InvoiceGeneratorException {
+        for (int i = 0; i < userId.length; i++)
+        {
+            rideRepository.addRides(userId[i], rides[i]);
+        }
+    }
+    public InvoiceSummary getInvoiceSummary(String[] userId) {
+        return this.calculateFareForNormal(rideRepository.getRides(userId));
+    }
 }

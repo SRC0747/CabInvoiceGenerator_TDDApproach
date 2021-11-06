@@ -55,7 +55,7 @@ public class InvoiceGenerator {
     public void addRideToRepositoy(String[] userId, Ride[][] rides) throws InvoiceGeneratorException {
         for (int i = 0; i < userId.length; i++)
         {
-            rideRepository.addRideForUser(userId[i], rides[i]);
+            rideRepository.addRides(userId[i], rides[i]);
         }
     }
 
@@ -64,7 +64,7 @@ public class InvoiceGenerator {
      * @param userId
      * @return invoiceSummary details of the user
      */
-    public InvoiceSummary invoiceForUser(String userId) {
-        return calculateFare(rideRepository.getRidesForUser(userId));
+    public InvoiceSummary invoiceForUser(String[] userId) {
+        return calculateFare(rideRepository.getRides(userId));
     }
 }
