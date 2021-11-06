@@ -23,7 +23,8 @@ public class InvoiceGenerator {
         double totalFare = distance * MINIMUM_COST_PER_KILLOMETER + time * COST_PER_TIME;
         //if(totalFare < MINIMUM_FARE)
             //return MINIMUM_FARE;
-        return totalFare;
+        //return totalFare;
+        return Math.max(totalFare, MINIMUM_FARE);
     }
 
     /**
@@ -34,7 +35,7 @@ public class InvoiceGenerator {
     public InvoiceSummary calculateFareMultipleRides(Ride[] rides) {
         double totalFare = 0;
         for (Ride ride:rides){
-            totalFare = this.calculateFare(ride.distance, ride.time);
+            totalFare += this.calculateFare(ride.distance, ride.time);
         }
         //return totalFare;
         return new InvoiceSummary(rides.length, totalFare);
