@@ -1,16 +1,23 @@
 package cabinvoicegenerator;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CabInvoiceGeneratorTest {
+    InvoiceGenerator invoiceGenerator = null;
+
+    @BeforeAll
+    public void beforeAll() {
+        invoiceGenerator = new InvoiceGenerator();
+    }
 
     @Test
     public void givenDistanceAndTime_ShouldReturnTotalFare() {
-        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+        //InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         double distance = 2.0;
         int time = 5;
         double fare = invoiceGenerator.calculateFare(distance, time);

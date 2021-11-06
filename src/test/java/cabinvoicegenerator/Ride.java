@@ -1,12 +1,11 @@
 package cabinvoicegenerator;
 
-
 /**
  * Ride is used to access Multiple Rides.
  *
  * @author Sampriti Roy Chowdhury
  * @version 0.0.1
- * @since 5-11-2021
+ * @since 7-11-2021
  */
 
 public class Ride {
