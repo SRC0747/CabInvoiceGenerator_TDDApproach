@@ -1,4 +1,4 @@
-package cabinvoicegenerator;
+package com.bridgelabz_cabinvoicegenerator;
 
 import java.util.HashMap;
 import java.util.Map;

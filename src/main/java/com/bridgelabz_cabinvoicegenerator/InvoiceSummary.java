@@ -1,4 +1,4 @@
-package cabinvoicegenerator;
+package com.bridgelabz_cabinvoicegenerator;
 
 /**
  * InvoiceSummary class is used to calculate total and average fare of Multiple Rides.

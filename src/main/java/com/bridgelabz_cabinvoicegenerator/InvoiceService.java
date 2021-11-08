@@ -1,4 +1,4 @@
-package cabinvoicegenerator;
+package com.bridgelabz_cabinvoicegenerator;
 
 /**
  * InvoiceService is used to access both Normal and Premium Multiple Rides

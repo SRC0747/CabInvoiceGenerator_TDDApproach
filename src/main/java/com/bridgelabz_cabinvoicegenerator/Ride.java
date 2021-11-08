@@ -1,4 +1,4 @@
-package cabinvoicegenerator;
+package com.bridgelabz_cabinvoicegenerator;
 
 /**
  * Ride is used to access Multiple Rides.

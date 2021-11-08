@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-11-08T03:52:26" hostname="DESKTOP-U9VT6NQ" time="0.055">
+  <properties/>
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.027"/>
+  <testcase name="givenMultipleRide_ShouldReturnPremiumTotalFare()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.009"/>
+  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnBothInvoiceSummary()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.002"/>
+  <testcase name="givenDistanceAndTime_shouldReturnPremiumTotalFare()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenUserId_ShouldReturnInvoiceSummary()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare()" classname="com.bridgelabz_cabinvoicegenerator.CabInvoiceGeneratorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
