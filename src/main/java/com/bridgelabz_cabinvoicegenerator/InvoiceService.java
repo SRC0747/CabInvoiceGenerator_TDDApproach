@@ -1,7 +1,7 @@
 package com.bridgelabz_cabinvoicegenerator;
 
 /**
- * InvoiceService is used to access both Normal and Premium Multiple Rides
+ * Access Total and Minimum Fare according to UserId of both Normal and Premium Multiple Rides
  *
  * @author Sampriti Roy Chowdhury
  * @version 0.0.1

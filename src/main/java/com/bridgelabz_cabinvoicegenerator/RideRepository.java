@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * RideRepository is used to access the list of rides based on list of userId given as input
+ * Access the list of rides based on list of given userId
  *
  * @author Sampriti Roy Chowdhury
  * @version 0.0.1

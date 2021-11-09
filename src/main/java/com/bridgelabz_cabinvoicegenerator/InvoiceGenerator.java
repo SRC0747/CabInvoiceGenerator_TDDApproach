@@ -1,7 +1,7 @@
 package com.bridgelabz_cabinvoicegenerator;
 
 /**
- * InvoiceGenerator is used to calculate Total Fare by taking distance and time and also compare with the Minimum fare.
+ * Calculate Total and Minimum Fare by taking distance and time and also compare with the Minimum fare corresponding with UserId
  *
  * @author Sampriti Roy Chowdhury
  * @version 0.0.1

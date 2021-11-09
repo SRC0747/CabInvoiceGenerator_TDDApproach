@@ -1,7 +1,7 @@
 package com.bridgelabz_cabinvoicegenerator;
 
 /**
- * InvoiceGeneratorException is used  to  check whether the given UserId already exists or not and throws an exception message.
+ * Check whether the given UserId already exists or not and throws an exception message.
  *
  * @author Sampriti Roy Chowdhury
  * @version 0.0.1
